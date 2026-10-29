@@ -49,6 +49,12 @@ Máy bay tự tiến lên. Khi đi đủ quãng đường chạy đà, script đ
 
 `GameManager.NextScene()` tải scene `Lab33_Complete`. Nút `CONTINUE` đã được nối với hàm này trong sự kiện `onClick`.
 
+### Nút Again hoạt động ở đâu?
+
+File `Assets/Lab33/Scripts/CompletionScreen.cs`.
+
+Tại scene hoàn thành, nút `AGAIN` gọi `CompletionScreen.PlayAgain()`. Hàm này đặt lại `Time.timeScale` rồi tải scene `Lab33_UI_Popup`, vì vậy toàn bộ Lab 3.3 bắt đầu lại từ đầu.
+
 ### UI được tạo ở đâu?
 
 File `Assets/Lab33/Editor/Lab33ProjectBuilder.cs`.
@@ -56,7 +62,7 @@ File `Assets/Lab33/Editor/Lab33ProjectBuilder.cs`.
 - `CreatePopupCanvas()` tạo hierarchy Canvas/Panel/Frame/Text/Button.
 - `CreateButton()` tạo Button và TMP_Text con.
 - `CreateDemoScene()` gắn GameManager vào Main Camera, gán tham chiếu và nối `onClick`.
-- `CreateCompleteScene()` tạo scene thứ hai để chứng minh Continue tải scene kế tiếp.
+- `CreateCompleteScene()` tạo scene thứ hai, nút `AGAIN` và nối sự kiện quay lại bài Lab 3.3.
 
 Đây là Editor script, chỉ dùng để dựng tài nguyên trong Unity Editor; mã gameplay nằm trong thư mục `Scripts`.
 

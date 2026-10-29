@@ -60,7 +60,7 @@ namespace Lab33Editor
             AssetDatabase.SaveAssets();
             AssetDatabase.Refresh();
             EditorSceneManager.OpenScene(DemoScene);
-            Debug.Log("[Lab 3.3] Build complete: TMP popup, Enter Wall trigger, Restart and Continue are ready.");
+            Debug.Log("[Lab 3.3] Build complete: popup, Restart, Continue and Again are ready.");
         }
 
         [MenuItem("Lab 3.3/Open Demo and Play")]
@@ -139,8 +139,8 @@ namespace Lab33Editor
                 new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), new Vector2(0f, -85f), new Vector2(1000f, 70f));
 
             CompletionScreen controller = cameraObject.AddComponent<CompletionScreen>();
-            Button replay = CreateButton(canvas.transform, "Replay Button", "REPLAY DEMO", font, new Vector2(0f, -205f), new Vector2(360f, 76f), Amber, Night);
-            UnityEventTools.AddPersistentListener(replay.onClick, controller.ReplayDemo);
+            Button again = CreateButton(canvas.transform, "Again Button", "AGAIN", font, new Vector2(0f, -205f), new Vector2(360f, 76f), Amber, Night);
+            UnityEventTools.AddPersistentListener(again.onClick, controller.PlayAgain);
 
             CreateEventSystem();
             EditorSceneManager.SaveScene(scene, CompleteScene);

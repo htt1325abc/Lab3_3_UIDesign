@@ -9,6 +9,7 @@ Project Unity riêng cho yêu cầu từ slide 26 đến hết của bài Lab 3.
 3. Bấm Play. Máy bay tự chạy đà và cất cánh.
 4. Khi máy bay đã cất cánh và đi qua `Enter Wall`, popup xuất hiện.
 5. `RESTART` tải lại scene hiện tại; `CONTINUE` mở scene hoàn thành.
+6. Tại màn hình hoàn thành, bấm `AGAIN` để quay về và bắt đầu lại Lab 3.3.
 
 ## Đối chiếu yêu cầu slide 26–34
 
@@ -18,6 +19,7 @@ Project Unity riêng cho yêu cầu từ slide 26 đến hết của bài Lab 3.
 - `EnterGame` chỉ gọi popup sau khi máy bay đã cất cánh và chạm trigger `Enter Wall`.
 - `RestartScene()` tải lại scene hiện tại.
 - `NextScene()` tải scene kế tiếp là `Lab33_Complete`.
+- Nút `AGAIN` trong scene hoàn thành gọi `CompletionScreen.PlayAgain()` để tải lại scene chính.
 - Hai sự kiện `Button.onClick` được nối sẵn với GameManager.
 - GameManager nằm trên `Main Camera`; toàn bộ tham chiếu UI đã được gán.
 

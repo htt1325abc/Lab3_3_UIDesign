@@ -23,5 +23,6 @@ Recordings/
 *.mdb
 *.opendb
 *.VC.db
+.~lock.*#
 sysinfo.txt
 crashlytics-build.properties
