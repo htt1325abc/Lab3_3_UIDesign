@@ -1,0 +1,14 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Lab33/Scenes/Lab33_UI_Popup.unity
+    guid: eeb99cf27c015d7ef8dde58bf53451fd
+  - enabled: 1
+    path: Assets/Lab33/Scenes/Lab33_Complete.unity
+    guid: 7030e765ddb0ca223b6af15b1e685a84
+  m_configObjects: {}
